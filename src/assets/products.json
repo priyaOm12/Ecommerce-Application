@@ -1,0 +1,75 @@
+[
+    {
+        "productId":"111",
+        "productName":"orange",
+        "productImagePath":"assets/images/products/orange.jpg",
+        "productPrice":"120",
+        "productDescription":"The orange is a usually round or oval citrus; its rind and flesh are generally orange, except the varieties of red pulp. The edible part of the orange is the flesh, consumed in fresh or in juice. The orange is also used to make stewed fruit, jams, for consumption as dehydrated fruit"
+    },
+    {
+        "productId":"112",
+        "productName":"strawberry",
+        "productImagePath":"assets/images/products/strawberry.jpg",
+        "productPrice":"120",
+        "productDescription":"The orange is a usually round or oval citrus; its rind and flesh are generally orange, except the varieties of red pulp. The edible part of the orange is the flesh, consumed in fresh or in juice. The orange is also used to make stewed fruit, jams, for consumption as dehydrated fruit"
+    },
+    {
+        "productId":"113",
+        "productName":"greenplate",
+        "productImagePath":"assets/images/products/greenplate.jpg",
+        "productPrice":"120",
+        "productDescription":"The orange is a usually round or oval citrus; its rind and flesh are generally orange, except the varieties of red pulp. The edible part of the orange is the flesh, consumed in fresh or in juice. The orange is also used to make stewed fruit, jams, for consumption as dehydrated fruit"
+    },
+    {
+        "productId":"114",
+        "productName":"capsicum",
+        "productImagePath":"assets/images/products/capsicum.jpg",
+        "productPrice":"120",
+        "productDescription":"The orange is a usually round or oval citrus; its rind and flesh are generally orange, except the varieties of red pulp. The edible part of the orange is the flesh, consumed in fresh or in juice. The orange is also used to make stewed fruit, jams, for consumption as dehydrated fruit"
+    },
+    {
+        "productId":"115",
+        "productName":"fishFry",
+        "productImagePath":"assets/images/products/fishFry.jpg",
+        "productPrice":"120",
+        "productDescription":"The orange is a usually round or oval citrus; its rind and flesh are generally orange, except the varieties of red pulp. The edible part of the orange is the flesh, consumed in fresh or in juice. The orange is also used to make stewed fruit, jams, for consumption as dehydrated fruit"
+    },
+    {
+        "productId":"116",
+        "productName":"vegFood",
+        "productImagePath":"assets/images/products/vegFood.jpg",
+        "productQuantity":"124",
+        "productPrice":"120",
+        "productDescription":"The orange is a usually round or oval citrus; its rind and flesh are generally orange, except the varieties of red pulp. The edible part of the orange is the flesh, consumed in fresh or in juice. The orange is also used to make stewed fruit, jams, for consumption as dehydrated fruit"
+    },
+    {
+        "productId":"117",
+        "productName":"lemon",
+        "productImagePath":"assets/images/products/lemon.jpg",
+        "productPrice":"120",
+        "productDescription":"The orange is a usually round or oval citrus; its rind and flesh are generally orange, except the varieties of red pulp. The edible part of the orange is the flesh, consumed in fresh or in juice. The orange is also used to make stewed fruit, jams, for consumption as dehydrated fruit"
+    },
+    {
+        "productId":"118",
+        "productName":"gose",
+        "productImagePath":"assets/images/products/gose.jpg",
+        "productPrice":"120",
+        "productDescription":"The orange is a usually round or oval citrus; its rind and flesh are generally orange, except the varieties of red pulp. The edible part of the orange is the flesh, consumed in fresh or in juice. The orange is also used to make stewed fruit, jams, for consumption as dehydrated fruit"
+    },
+    {
+        "productId":"119",
+        "productName":"greenPlate",
+        "productImagePath":"assets/images/products/greenplate.jpg",
+        "productPrice":"120",
+        "productDescription":"The orange is a usually round or oval citrus; its rind and flesh are generally orange, except the varieties of red pulp. The edible part of the orange is the flesh, consumed in fresh or in juice. The orange is also used to make stewed fruit, jams, for consumption as dehydrated fruit"
+    },
+    {
+        "productId":"120",
+        "productName":"freshChicken",
+        "productImagePath":"assets/images/products/freshChicken.jpg",
+        "productPrice":"120",
+        "productDescription":"The orange is a usually round or oval citrus; its rind and flesh are generally orange, except the varieties of red pulp. The edible part of the orange is the flesh, consumed in fresh or in juice. The orange is also used to make stewed fruit, jams, for consumption as dehydrated fruit"
+    }
+    
+]
+

@@ -1,0 +1,16 @@
+nav{
+    background-color: #141d3c;
+}
+.img{
+    height: 80px;
+}
+.active{
+    color: white;
+}
+.badge {
+    padding-left: 5px;
+    padding-right: 6px;
+    border-radius: 10px;
+    color: #212529;
+    background-color: white;
+}

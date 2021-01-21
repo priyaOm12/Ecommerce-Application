@@ -1,0 +1,62 @@
+.card-image{
+    height:30px;
+    max-width: 80px;
+    min-height: 80px;
+    padding-top: 3px;
+}
+.products{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    max-width: 40px;
+    margin-top: 10px;
+    padding: 4px;
+
+}
+.badge{
+    font-size: 1em;
+}
+.product-title{
+    color: white;
+    background-color: #25bd01;
+   
+}
+.cart-total{
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-content{
+    /* padding: 5px; */
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.check-out{
+    color: white;
+    background-color: #25bd01;
+    max-width: 220px;
+    border: none;
+    margin-left: auto;
+    padding: 4px;
+    margin: 50px;
+
+}
+.cart-heading{
+    font-weight: 600;
+    margin-left:50px;
+}
+.total-content{
+    margin-top: 10px;
+    color: #25bd01;
+    font-weight: 500;
+}
+.discount{
+    margin-top: 10px;
+    color:red;
+    font-weight: 500;
+}

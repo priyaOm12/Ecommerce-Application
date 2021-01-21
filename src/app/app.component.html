@@ -1,0 +1,16 @@
+<div>
+    <select #countrySelect (change)="countryChange(countrySelect.value)">
+        <option *ngFor="let country of countries" [value]="country.countryId">{{ country.countryId }}</option>
+    </select>|
+    <ng-container *ngFor="let country of countries">
+        <select #languageSelect *ngIf="country.countryId === selectedCountryId"
+            (change)="translate.use(languageSelect.value)">
+            <option *ngFor="let language of country.languages">{{language}}</option>
+        </select>
+    </ng-container>
+</div>
+<app-header></app-header>
+<router-outlet></router-outlet>
+<div></div>
+
+<app-footer></app-footer>

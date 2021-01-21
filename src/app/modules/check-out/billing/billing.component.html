@@ -1,0 +1,87 @@
+<div class="check-out">
+    <div class="row">
+        <div class="col-md-5">
+            <p>Billing Information</p>
+            <div class="form-container">
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <div class="inputContainer">
+                                <i class="fa fa-user icon"></i>
+                                <label>First Name</label>
+                                <input type="text" id="firstName" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="inputContainer">
+                                <i class="fa fa-user icon"></i>
+                                <label>Last Name</label>
+                                <input type="text" id="lastName" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="inputContainer">
+                                <i class="fa fa-envelope icon"></i>
+                                <label>Email</label>
+                                <input type="email" id="email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="inputContainer">
+                                <i class="fa fa-mobile icon"></i>
+                                <label>Phone No</label>
+                                <input type="text" id="phoneNo" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inputContainer">
+                        <i class="fa fa-map-marker icon"></i>
+                        <label>Address</label>
+                        <input type="text" id="address" class="form-control">
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" id="city" class="form-control">
+                    </div>
+                    <div>
+                        <label>country</label>
+                        <input type="text" id="country" class="form-control">
+                    </div>
+                    <div>
+                        <label>Pincode/Zip</label>
+                        <input type="text" id="pinCode" class="form-control">
+                    </div>
+                    <button type="submit" (click)="cardPage()" class="submit-button">Continue</button>
+                </form>
+            </div>
+            
+        </div>
+        <div class="col-md-5" *ngIf="cartItems">
+            <div class="order-summary">ORDER SUMMARY</div>
+            <div class="row" *ngFor="let cartItem of cartItems">
+                <div class="col-sm-2">
+                    <div class="content">
+                        <img [src]="cartItem.productImagePath" alt="product">
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="content">
+                        {{cartItem.productName}}
+                    </div>
+                    <div class="content">
+                        Quantity:{{cartItem.productQuantity}}
+                    </div>
+                    <div class="content">
+                        Price:{{cartItem.productQuantity*cartItem.productPrice}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

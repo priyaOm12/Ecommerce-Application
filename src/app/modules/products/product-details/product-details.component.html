@@ -1,0 +1,20 @@
+<div class="detail-page"></div>
+<div class="card">
+    <div class="row" *ngIf="productItemDetail">
+        <div class="col-md-4">
+            <img [src]="productItemDetail.productImagePath" alt="productItemDetail.productId">
+        </div>
+        <div class="col-md-8">
+            <div class="card-title" class="text-bold">{{productItemDetail.productName}}</div>
+            <div class="card-content" class="price-content">{{productItemDetail.productPrice|currency:'USD'}}</div>
+            <div class="card-content" class="product-description">{{productItemDetail.productDescription}}</div>
+        </div>
+    </div>
+    <div class="cart-div">
+        <span class="badge badge-light" (click)="decreaseQuantity()"><i class="fa fa-minus"></i></span>
+        <input type="text" name="quantity" id="quantity" [(ngModel)]="quantityCountValue" maxlength="3" #quantityCount>
+        <span class="badge badge-light" (click)="increaseQuantity()"><i class="fa fa-plus"></i></span>
+    </div>
+    <div><button type="button" class="cart-button" (click)="addToCart(productItemDetail,quantityCount.value)">Add To
+            Cart</button></div>
+</div>

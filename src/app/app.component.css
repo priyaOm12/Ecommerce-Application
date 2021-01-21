@@ -1,0 +1,13 @@
+div{
+    
+    background-color:#24bd00;
+    color:white
+}
+select{
+    margin-left: 30px;
+    background-color: #24bd00;
+    border: none;
+    outline: none;
+    color: white;
+    
+}

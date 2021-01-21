@@ -1,0 +1,44 @@
+p{
+    font-weight: 500;
+}
+.inputContainer i {
+    position: absolute;
+ }
+.icon {
+    color: #25bd01;
+    width: 100%;
+    text-align: right;
+    margin-top: 36px;
+    margin-left: -42px;
+ }
+ .form-control{
+    line-height: 1.5;
+ }
+ img{
+    height: 50px;
+}
+.check-out{
+    padding: 30px;
+    border: solid silver 1px;
+    margin: 20px;
+}
+.cart-items{
+    margin-top: 40px;
+    background-color: #f6f6f6;
+
+}
+.content{
+    font-size: 12px;
+}
+.order-summary{
+    margin-bottom: 15px;
+}
+.row{
+    padding: 10px;
+}
+.submit-button{
+    border: none;
+    background-color:  #25bd01;
+    color: white;
+    margin: 20px;
+}

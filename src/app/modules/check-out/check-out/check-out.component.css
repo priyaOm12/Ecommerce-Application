@@ -1,0 +1,24 @@
+img{
+    height: 50px;
+}
+.check-out{
+    padding: 30px;
+    border: solid silver 1px;
+    margin: 20px;
+}
+.cart-items{
+    margin-top: 40px;
+    background-color: #f6f6f6;
+
+}
+.content{
+    font-size: 12px;
+}
+.order-summary{
+    margin-bottom: 15px;
+}
+.row{
+    padding: 10px;
+}
+
+

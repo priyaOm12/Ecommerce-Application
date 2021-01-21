@@ -1,0 +1,36 @@
+.footer-content{
+    
+    background-color: #141d3c;
+    color: white;
+    
+}
+
+.footer-card{
+    background-color: #141d3c;
+    margin-top: 50px;
+    padding-left: 250px;
+}
+.card-body{
+    padding-left:  20px;
+}
+h6{
+    color: #dde5e4;
+}
+small{
+    color: #7c879e;
+    font-size: 12px;
+}
+.card-content{
+    padding-top: 50px;
+    text-align: left;
+    line-height: 2;
+}
+
+.hr{
+   background-color: white;
+   width:65%;
+}
+.footer{
+    background-color:#141d3c;
+    height: 200px;
+}

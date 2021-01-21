@@ -1,0 +1,47 @@
+
+<div class="product-list">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="categories">
+                    <div class="card-title" class="categories-title">Categories</div>
+                    <div>Friuts</div>
+                    <div>Vegetables</div>
+                    <div>Meats</div>
+                    <div>Food</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row" *ngIf="productsList" [hidden]="showProducts">
+                <div class="col-md-3" *ngFor="let product of productsList">
+                    <div class="product-card">
+                        <div class="card" id="card-item">
+                            <img [src]="product.productImagePath" alt={{product.productName}} class="card-image"
+                                (click)="displayDetails(product.productId)">
+                            <div class="card-title" class="name-content">{{product.productName}}</div>
+                            <div class="card-content" class="price-content">{{product.productPrice|currency:'USD'}}
+                            </div>
+                            <div class="show"><button type="button" class="cart-button" (click)="addCart(product)">Add
+                                    To Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" *ngIf="searchList" [hidden]="!showProducts">
+                <div class="col-md-4" *ngFor="let product of searchList">
+                    <div class="product-card">
+                        <div class="card" (click)="displayDetails(product.productId)" id="card-item">
+                            <img [src]="product.productImagePath" alt={{product.productName}} class="card-image"
+                                (click)="displayDetails(product.productId)">
+                            <div class="card-title" class="name-content">{{product.productName}}</div>
+                            <div class="card-content" class="price-content">{{product.productPrice|currency:'USD'}}
+                            </div>
+                            <div class="show"><button type="button" class="cart-button" (click)="addCart(product)">Add
+                                    To Cart</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

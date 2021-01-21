@@ -1,0 +1,86 @@
+<div class="products">
+    <div class="card" class="product-title">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="head-content">Image</div>
+            </div>
+            <div class="col-md-2">
+                <div class="head-content">Products</div>
+            </div>
+            <div class="col-md-2">
+                <div class="head-content">Price</div>
+            </div>
+            <div class="col-md-2">
+                <div class="head-content">Quantity</div>
+            </div>
+            <div class="col-md-2">
+                <div class="head-content">Total</div>
+            </div>
+            <div class="col-md-1">
+                <div class="head-content"><i class="fa fa-times"></i></div>
+
+            </div>
+        </div>
+    </div>
+    <div *ngIf="cartProducts.length !== 0 ;else nocartItem">
+        <div class="card" class="card-products">
+            <div class="row" *ngFor="let product of cartProducts;trackBy:trackByProductId">
+                <div class="col-md-3">
+                    <div class="card-content">
+                        <img [src]="product.productImagePath" alt="product.productName" class="card-image">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="cart-content">
+                        {{product.productName}}
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="cart-content">
+                        {{product.productPrice}}
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="cart-content">
+                        <span class="badge badge-light" (click)="decreaseQuantityValue(product)"><i
+                                class="fa fa-minus"></i></span>
+                        <input type="text" name="quantityValue" id="quantityValue" [(ngModel)]="product.productQuantity"
+                            maxlength="3" (change)="quantityValueChanges(product)">
+                        <span class="badge badge-light" (click)="increaseQuantityValue(product)"><i
+                                class="fa fa-plus"></i></span>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="cart-content">
+                        {{product.productQuantity*product.productPrice}}
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="cart-content">
+                        <i class="fa fa-times" (click)="deleteItem(product)"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #nocartItem>No cart items</ng-template>
+</div>
+
+<div class="cart-total">
+    <div class="card">
+        <div class="row">
+            <div class="card-title" class="cart-heading">cart total:</div>
+            <div class="col-md-4">
+                <div class="card-content">Total Amount</div>
+                <div class="card-content">Discount(up to 15%):</div>
+                <div class="card-content">Payable Amount:</div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-content" class="total-content">{{totalAmout}}</div>
+                <div class="card-content" class="discount">-{{discountAmount}}</div>
+                <div class="card-content" class="total-content">{{payableAmount}}</div>
+            </div>
+        </div>
+        <button class="check-out" (click)="processToCheckOut()">Process To CheckOut</button>
+    </div>
+</div>

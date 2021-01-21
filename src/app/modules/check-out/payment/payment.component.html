@@ -1,0 +1,59 @@
+<div class="check-out">
+    <div class="row">
+        <div class="col-md-5">
+            <p>Card Information</p>
+            <div class="form-container">
+                <form>
+            
+                    <div class="inputContainer">
+                        <i class="fa fa-user icon"></i>
+                        <label>Full Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div>
+                        <label>Cart Number</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="inputContainer">
+                                <i class="fa fa-calendar-alt icon"></i>
+                                <label>Expire Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div>
+                                <label>CVV</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" (click) = "successPage()"  class="submit-button">Continue</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-5" *ngIf="cartItems">
+            <div class="order-summary">ORDER SUMMARY</div>
+            <div class="row" *ngFor="let cartItem of cartItems">
+                <div class="col-sm-2">
+                    <div class="content">
+                        <img [src]="cartItem.productImagePath" alt="product">
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="content">
+                        {{cartItem.productName}}
+                    </div>
+                    <div class="content">
+                        Quantity:{{cartItem.productQuantity}}
+                    </div>
+                    <div class="content">
+                        Price:{{cartItem.productQuantity*cartItem.productPrice}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

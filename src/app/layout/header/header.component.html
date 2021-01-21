@@ -1,0 +1,9 @@
+<nav class="navbar">
+  <a class="navbar-brand">
+    <img [src]="logoPath" alt="Logo" class="navbar-item">
+  </a>
+  <a [routerLink]="['home']" [routerLinkActive]="['active']">Home </a>
+  <a [routerLink]="['products']" [routerLinkActive]="['active']">Products </a>
+  <a [routerLink]="['cart']" [routerLinkActive]="['active']"><i class="fa fa-shopping-cart fa-2x"></i><span
+      class="badge badge-warning">{{cartCountValue}}</span></a>
+</nav>
